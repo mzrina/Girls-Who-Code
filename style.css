@@ -1,0 +1,59 @@
+h1{
+  color :  #051094;
+  text-align: center;
+
+}
+
+#header1{
+  color : white;
+  text-align: left;
+  font-size: 40px;
+}
+  /* text-decoration: underline; */
+
+#list{
+  font-family: Open Sans Condensed;
+  font-size: 20px;
+  /* i think padding is the space between lines */
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: white;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  font-family: 'Playfair Display serif';
+}
+
+.tablink:hover {
+  background-color: #C0BEBF;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+  font-size: 40px
+  font-family: 'Playfair Display', serif;
+}
+
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
