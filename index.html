@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Marina Wong</title>
+    <link rel="stylesheet" href= "style.css">
+
+
+  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+  }
+
+  /* Style tab links */
+  .tablink {
+    background-color: white;
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+    font-family: 'Playfair Display serif';
+  }
+
+  .tablink:hover {
+    background-color: #C0BEBF;
+  }
+
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+  }
+
+  #Home {background-color: #7EF0EB;}
+  #News {background-color: #C77EF0;}
+  #Contact {background-color: #7EF0B3;}
+  #About {background-color: #F7A8D4;}
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+  <button class="tablink" onclick="openPage('Home', this, '#7EF0EB')"id="defaultOpen">Home</button>
+  <button class="tablink" onclick="openPage('News', this, '#C77EF0')" >Interests</button>
+  <button class="tablink" onclick="openPage('Contact', this, '#7EF0B3')">Dislikes</button>
+  <button class="tablink" onclick="openPage('About', this, '#F7A8D4')">Contact</button>
+<!-- #8FF6F1 -->
+  <div id="Home" class="tabcontent">
+    <div id = "header1">About Me</div>
+
+    <strong id = "list">My name is Marina Wong and I’m attending Mills High School, about to enter the 12th grade. This fall I will be applying to colleges that I'll hopefully get into. I am currently attending Girls Who Code at Walmart Labs in California.</strong>
+
+  </div>
+
+  <div id="News" class="tabcontent">
+    <div id = "header1">Likes</div>
+    <ul> <!-- everything in this unsorted list will get affected by the class: .list  -->
+      <li id = "list"><strong>I really like to travel and have been to a few countries. I enjoy seeing the different cultures and seeing the differences between my life and the rest of the worlds'.</strong></li>
+      <li id = "list"><strong>I also like to take naps quite often and spend time relaxing and bingeing shows.</strong></li>
+      <li id = "list"><strong>I love eating all kinds of food and looking at cars.</strong></li>
+    </ul>
+  </div>
+
+  <div id="Contact" class="tabcontent">
+    <div id = "header1">Dislikes</div>
+    <ul>
+      <li id = "list"><strong>I only eat shrimp and fish when it’s made certain ways</strong></li>
+      <li id = "list"><strong>Snakes</strong></li>
+    </ul>
+
+  </div>
+
+  <div id="About" class="tabcontent">
+    <div id = "header1">Contact Me</div>
+    <p id = "list"><strong>Click on any of the icons below</strong></p>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-snapchat-ghost"></a>
+    <style>
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+
+    .fa-google {
+      background: #dd4b39;
+      color: white;
+    }
+
+    .fa-linkedin {
+      background: #007bb5;
+      color: white;
+    }
+
+    .fa-youtube {
+      background: #bb0000;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+
+    .fa-snapchat-ghost {
+      background: #fffc00;
+      color: white;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    </style>
+  </div>
+
+  <script>
+  function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+
+      <a href="http://4.bp.blogspot.com/_B5E5HPIKKBY/TCgENnaXouI/AAAAAAAAAZs/JHip18_p03M/s320/Screen+shot+2010-06-27+at+10.08.28+PM.png">Click Here</a>
+
+
+  </body>
+</html>
