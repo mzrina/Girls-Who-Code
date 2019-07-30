@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>A Taste of the Benyay</title>
+    <link rel="stylesheet" href= "final.css">
+    <link href="https://fonts.googleapis.com/css?family=Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="ahhhh.js"></script>
+  </head>
+  <h1 class = "headers">A Taste of the Bay</h1>
+
+  <style>
+  * {box-sizing: border-box;}
+  body, html {
+    height: 125%;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+  }
+
+  </style>
+  </head>
+
+  <body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sofia&display=swap" rel="stylesheet">
+
+  <button class="tablink" onclick="openPage('Home', this, 'black')"id="defaultOpen"><strong>Home</strong></button>
+  <button class="tablink" onclick="openPage('News', this, 'black')" ><strong>Find Food</strong></button>
+  <button class="tablink" onclick="openPage('About', this, 'black')"><strong>Pictures</strong></button>
+  <button class="tablink" onclick="openPage('OurPicks', this, 'black')"><strong>Our Picks</strong></button>
+  <button class="tablink" onclick="openPage('Contact', this, 'black')"><strong>About Us</strong></button>
+
+  <div id="Home" class="tabcontent">
+     <h3 id = "header1" class = "pad2"><marquee behavior="slide" direction="left" scrollamount="50">Our Mission</marquee></h3>
+    <strong><h5 id = "list" class = "center"><div class = "parallax">Our mission is to create a platform in which users can easily find a location in the Bay Area to eat. Whether it’s a full-course meal, dessert, drink, or even a quick snack, you can find it all here. Users can filter the type of cuisine they want, the specific city, and dietary restrictions in order to get personalized results.</div></h5></strong>
+    <p class = "center">Our Favorites</p>
+    <div id = "imagesMain">
+      <img class = "pad" src= "bobaguys.jpeg" width ="222" length = "1308"></img>
+      <img src= "nickthegreek.jpeg" width = "222" length = "1308"></img>
+      <img src= "milkbomb.jpeg" width = "222" length = "1308"></img>
+      <img class = "margin" src= "hellokitty.jpeg" width = "222" length = "1308"></img>
+    </div>
+    <footer class = "centerfont">
+      <div>
+        <p class = "paddingTopFooter">Copyright 2019, by #Smact Inc.</p>
+        <p class = "paddingBottomFooter">Powered by <a href="https://www.w3schools.com/" class = "footer">w3schools & <a href= "https://www.instagram.com/ariannasappetite/" class = "footer">Ariana</a></a></p></div>
+    </footer>
+  </div>
+
+  <div id="OurPicks" class="tabcontent words">
+    <h3 id = "header1" class = "pad2">Our Picks</h3>
+    <!-- <div id = "words">Our Picks</div> -->
+    <p>
+    <ul class="filterSection selectBox">
+        <li>
+            <strong>Show:</strong>
+            <input checked="true" type="checkbox" value="boba"/>
+            <label>Boba</label>
+        </li>
+        <li>
+            <input checked="true" type="checkbox" value="dessert"/>
+            <label>Dessert</label>
+        </li>
+        <li>
+            <input checked="true" type="checkbox" value="restaurant"/>
+            <label>Restaurants</label>
+        </li>
+        <!-- <li>
+            <input checked="true" type="checkbox" value="san_francisco"/>
+            <label>San Francisco</label>
+        </li>
+        <li>
+            <input checked="true" type="checkbox" value="burlingame"/>
+            <label>Burlingame</label>
+        </li>
+        <li>
+            <input checked="true" type="checkbox" value="daly_city"/>
+            <label>Daly City</label>
+        </li>
+        <li>
+            <input checked="true" type="checkbox" value="san_bruno"/>
+            <label>San Bruno</label>
+        </li>
+        <li>
+            <input checked="true" type="checkbox" value="palo_alto"/>
+            <label>Palo Alto</label>
+        </li>
+        <li>
+            <input checked="true" type="checkbox" value="san_jose"/>
+            <label>San Jose</label>
+        </li>
+        <li>
+            <input checked="true" type="checkbox" value="millbrae"/>
+            <label>Millbrae</label>
+        </li>
+        <li>
+            <input checked="true" type="checkbox" value="sunnyvale"/>
+            <label>Sunnyvale</label>
+        </li>
+        <li>
+            <input checked="true" type="checkbox" value="redwood_city"/>
+            <label>Redwood City</label>
+        </li> -->
+    </ul>
+  </p>
+
+    <ul id="itemsToFilter">
+
+      <li data-type = "dessert">
+      <!-- <li data-type = "dessert san_francisco"> -->
+        <div>
+          Mitchell's
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <p>
+            <img src "mitchellscropped.jpg" width = "225" length = "210"><span class = "pad2">San Francisco</span></img>
+            <br>
+            <span class = "pad2"> Dessert </span>
+            <br>
+            <span class = "pad2"> Known for: Ube-flavored Ice Cream</span>
+          </br>
+        </br>
+            </p>
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "dessert">
+      <!-- <li data-type = "dessert san_francisco"> -->
+        <div>
+          Ujitime
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> <div>
+              <p>
+
+                <img src = "ujitime.jpg" width = "150" length = "734" align= "left"><span  class = "pad2">San Francisco</span></img>
+                <br>
+                <span class = "pad2">Desserts</span>
+                <br>
+                <span class = "pad2">Known for: Soft Cream Taiyaki</span>
+              </br>
+            </br>
+              </p>
+            </ul>
+          </div>
+        </li>
+
+      <li data-type = "dessert">
+      <!-- <li data-type = "dessert san_francisco"> -->
+        <div>
+          Smitten
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> San Francisco </li>
+            <li> Dessert </li>
+            <li> Known for: Blueberry Crisp, Sweet Summer Corn, Peppermint Chip, Classic Vanilla, Chocolate Ganache with 61% Guittard Cacao, Cookie Dough w/ Pretzels and Chocolate Chips Ice Cream flavors
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "dessert">
+      <!-- <li data-type = "dessert san_francisco"> -->
+        <div>
+          Bake
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> San Francisco </li>
+            <li> Dessert </li>
+            <li> Known for: Cheese Tarts
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "dessert">
+      <!-- <li data-type = "dessert san_francisco"> -->
+        <div>
+          U:Dessert Story
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> San Francisco </li>
+            <li> Dessert </li>
+            <li> Known for: Bingsu & Chocolate Matcha Lava Cake
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "dessert">
+      <!-- <li data-type = "dessert san_francisco"> -->
+        <div>
+          Mission Minis
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> San Francisco </li>
+            <li> Dessert </li>
+            <li> Known for: Gourmet Mini Cupcakes
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "dessert">
+      <!-- <li data-type = "dessert san_francisco"> -->
+        <div>
+          Icicles
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> San Francisco </li>
+            <li> Dessert </li>
+            <li> Known for: Rolled Ice Cream
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "dessert">
+      <!-- <li data-type = "dessert san_francisco"> -->
+        <div>
+          Milkbomb
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> San Francisco </li>
+            <li> Dessert </li>
+            <li> Known for: Donut Ice Cream Sandwiches
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "dessert">
+      <!-- <li data-type = "dessert san_francisco"> -->
+        <div>
+          Powder
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> San Francisco </li>
+            <li> Dessert </li>
+            <li> Known for: Taiwanese Shaved Ice
+          </ul>
+        </div>
+      </li>
+
+
+      <li data-type = "boba">
+      <!-- <li data-type = "boba san_francisco"> -->
+        <div>
+          Boba Guys
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> San Francisco </li>
+            <li> Boba </li>
+            <li> Known for: Strawberry Matcha Latte
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "boba">
+      <!-- <li data-type = "boba san_francisco"> -->
+        <div>
+          Yi Fang
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> San Francisco </li>
+            <li> Boba </li>
+            <li> Known for: (limited quantity) Brown Sugar Pearl Tea Latte
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "boba">
+      <!-- <li data-type = "boba san_francisco"> -->
+        <div>
+          Purple Kow
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> San Francisco </li>
+            <li> Boba </li>
+            <li> Known for: Milk Tea
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "boba">
+      <!-- <li data-type = "boba san_francisco"> -->
+        <div>
+          Sharetea
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> San Francisco </li>
+            <li> Boba </li>
+            <li> Known for: Hawaii fruit tea, Wintermelon tea, Coffee creama, Boba Fresh Milk, Classic Pearl Milk Tea, and Strawberry Blended w/ Lychee Jelly & Ice Cream
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "boba">
+      <!-- <li data-type = "boba san_francisco"> -->
+        <div>
+          Teaspoon
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> San Francisco </li>
+            <li> Boba </li>
+            <li> Known for: Thai Iced Tea & their Specialty Drinks
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "boba">
+      <!-- <li data-type = "boba san_francisco"> -->
+        <div>
+          Quickly's
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> San Francisco </li>
+            <li> Boba </li>
+            <li> Known for: Bubble Milk Tea
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "boba">
+      <!-- <li data-type = "boba san_francisco"> -->
+        <div>
+          Super Cue
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> San Francisco </li>
+            <li> Boba </li>
+            <li> Known for: Osmanthus Milk Tea, Assam Milk Tea, and Iced Milk with Mango
+          </ul>
+        </div>
+      </li>
+
+
+      <li data-type = "restaurant">
+      <!-- <li data-type = "restaurant san_francisco"> -->
+        <div>
+          Sweet Maple
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> San Francisco </li>
+            <li> Restaurant </li>
+            <li> Known for: Millionare Candied Bacon
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "restaurant">
+      <!-- <li data-type = "restaurant san_francisco"> -->
+        <div>
+          Kitchen Story
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> San Francisco </li>
+            <li> Restaurant </li>
+            <li> Known for: Bacon
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "restaurant">
+      <!-- <li data-type = "restaurant san_francisco"> -->
+        <div>
+          Fondue Cowboy
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> San Francisco </li>
+            <li> Restaurant </li>
+            <li> Known for: Sweet & Savory Fondue
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "restaurant">
+      <!-- <li data-type = "restaurant san_francisco"> -->
+        <div>
+          Boudin's
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> San Francisco </li>
+            <li> Restaurant </li>
+            <li> Known for: Clam Chowder, Sourdough
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "restaurant">
+      <!-- <li data-type = "restaurant san_francisco"> -->
+        <div>
+          Super Duper Burger
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> San Francisco </li>
+            <li> Restaurant </li>
+            <li> Known for: Burgers
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "restaurant">
+      <!-- <li data-type = "restaurant san_francisco"> -->
+        <div>
+          Daeho, K-BBQ
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> San Francisco </li>
+            <li> Restaurant </li>
+            <li> Known for: Galbi Jjim, Beef Soup
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "dessert">
+      <!-- <li data-type = "dessert burlingame"> -->
+        <div>
+          Salt and Straw
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> Burlingame </li>
+            <li> Dessert </li>
+            <li> Known for: Handmade Delicious Ice Cream
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "dessert">
+      <!-- <li data-type = "dessert restaurant burlingame"> -->
+        <div>
+          Crepevine
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> Burlingame </li>
+            <li> Restaurant, Dessert </li>
+            <li> Known for: Crepes
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "boba">
+      <!-- <li data-type = "boba burlingame"> -->
+        <div>
+          Tpumps
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> Burlingame </li>
+            <li> Boba </li>
+            <li> Known for: Strawberry Mango Peach Black Milk Tea
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "dessert">
+      <!-- <li data-type = "dessert daly_city"> -->
+        <div>
+          Ketsourine Macarons
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> Daly City </li>
+            <li> Dessert </li>
+            <li> Known for: Macarons
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "dessert">
+      <!-- <li data-type = "dessert daly_city"> -->
+        <div>
+          Sweethoney Dessert
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> Daly City </li>
+            <li> Dessert </li>
+            <li> Known for: Hong Kong Desserts
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "dessert">
+      <!-- <li data-type = "dessert daly_city"> -->
+        <div>
+          Meet Fresh
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> Daly City </li>
+            <li> Dessert </li>
+            <li> Known for: Taiwanese Desserts
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "boba">
+      <!-- <li data-type = "boba daly_city"> -->
+        <div>
+          Teaven
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> Daly City </li>
+            <li> Boba </li>
+            <li> Known for: Taro Milk Tea
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "restaurant">
+      <!-- <li data-type = "restaurant daly_city"> -->
+        <div>
+          MOD Pizza
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> Daly City </li>
+            <li> Restaurant </li>
+            <li> Known for: Make Your Own Pizza
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "restaurant">
+      <!-- <li data-type = "restaurant daly_city"> -->
+        <div>
+          In-n-Out
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> Daly City </li>
+            <li> Restaurant </li>
+            <li> Known for: Burgers & Animal-Style Fries
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "restaurant">
+      <!-- <li data-type = "restaurant daly_city"> -->
+        <div>
+          California Fish Grill
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> Daly City </li>
+            <li> Restaurant </li>
+            <li> Known for: Fish
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "dessert">
+      <!-- <li data-type = "dessert boba san_bruno"> -->
+        <div>
+          Aqua Club
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> San Bruno </li>
+            <li> Dessert, Boba </li>
+            <li> Known for: Mochi Waffles & Boba Drinks
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "boba">
+      <!-- <li data-type = "boba san_bruno"> -->
+        <div>
+          Happy Lemon
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> San Bruno </li>
+            <li> Boba </li>
+            <li> Known for: Salted Cheese Series Drink
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "dessert">
+      <!-- <li data-type = "dessert palo_alto"> -->
+        <div>
+          Sprinkles
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> Palo Alto </li>
+            <li> Dessert </li>
+            <li> Known for: Cupcakes
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "restaurant">
+      <!-- <li data-type = "restaurant palo_alto"> -->
+        <div>
+          California Pizza Kitchen
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> Palo Alto </li>
+            <li> Restaurant </li>
+            <li> Known for: California-style Pizza
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "restaurant">
+      <!-- <li data-type = "restaurant palo_alto"> -->
+        <div>
+          The Melt
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> Palo Alto </li>
+            <li> Restaurant </li>
+            <li> Known for: Grilled Cheese & MeltBurger
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "restaurant">
+      <!-- <li data-type = "restaurant palo_alto"> -->
+        <div>
+          Umami Burger
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> Palo Alto </li>
+            <li> Restaurant </li>
+            <li> Known for: Gourmet Hamburgers
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "restaurant">
+      <!-- <li data-type = "restaurant palo_alto"> -->
+        <div>
+          Sushiritto
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> Palo Alto </li>
+            <li> Restaurant </li>
+            <li> Known for: Sushi Burritos
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "dessert">
+      <!-- <li data-type = "dessert san_jose"> -->
+        <div>
+          Hello Kitty Cafe
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> San Jose </li>
+            <li> Restaurant </li>
+            <li> Known for: Sweet Treats
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "restaurant">
+      <!-- <li data-type = "restaurant palo_alto"> -->
+        <div>
+          California Pizza Kitchen
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> Palo Alto </li>
+            <li> Restaurant </li>
+            <li> Known for: California-style Pizza
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "boba">
+      <!-- <li data-type = "boba millbrae"> -->
+        <div>
+          T4
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> Millbrae </li>
+            <li> Boba </li>
+            <li> Known for: Milk Tea
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "restaurant">
+      <!-- <li data-type = "restaurant millbrae"> -->
+        <div>
+          Millbrae Pancake House
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> Millbrae </li>
+            <li> Restaurant </li>
+            <li> Known for: Specialty Pancakes
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "restaurant">
+      <!-- <li data-type = "restaurant sunnyvale"> -->
+        <div>
+          Nom Burger
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> Sunnyvale </li>
+            <li> Restaurant </li>
+            <li> Known for: California Love Burger, Dateggdoe Burger
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "restaurant">
+      <!-- <li data-type = "restaurant sunnyvale"> -->
+        <div>
+          Lee's Sandwiches
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> Sunnyvale </li>
+            <li> Restaurant </li>
+            <li> Known for: Vietnamese sandwiches
+          </ul>
+        </div>
+      </li>
+
+      <li data-type = "restaurant">
+      <!-- <li data-type = "restaurant redwood_city"> -->
+        <div>
+          Nick the Greek
+        </div>
+        <div>
+          <ul class = "itemsFilter">
+            <li> Redwood City </li>
+            <li> Restaurant </li>
+            <li> Known for: Lamb Gyros
+          </ul>
+        </div>
+      </li>
+      </ul>
+
+
+</div>
+
+<div id="About" class="tabcontent paddingPhotoGallery">
+<h3 id = "header1" class = "pad2">Photo Gallery</h3>
+  <!-- <p>Photo Gallery</p> -->
+<div class="slideshow-container toppad">
+
+<div class="mySlides fade">
+  <div class="numbertext toppad">1 / 8</div>
+  <img src="fishgrill.jpg.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext toppad">2 / 8</div>
+  <img src="themelt.jpeg" class = "cener" style="width:80%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext toppad">3 / 8</div>
+    <img src="nickthegreek3.jpeg" class = "cener" style="width:80%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext toppad">4 / 8</div>
+    <img src="daeho.jpg" class = "cener" style="width:80%">
+    <div class="text">Caption Four</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext toppad">5 / 8</div>
+    <img src="crepevine2.jpg" class = "cener" style="width:80%">
+    <div class="text">Caption Five</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext toppad">6 / 8</div>
+    <img src="nom.jpg" class = "cener" style="width:80%">
+    <div class="text">Caption Six</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext toppad">7 / 8</div>
+    <img src="umami.jpeg" class = "cener" style="width:80%">
+    <div class="text">Caption Seven</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext toppad">8 / 8</div>
+    <img src="hellokitty.jpeg" class = "cener" style="width:80%">
+    <div class="text">Caption Eight</div>
+  </div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+
+</div>
+</div>
+<body>
+  <div id="News" class="tabcontent">
+    <div> <h2 id = "header1">Find Food</h2></div>
+    <div class="main" style="color: black;" id="results"></div>
+      <ul> <!-- everything in this unsorted list will get affected by the class: .list  -->
+          <div class="sidenav">
+          <!-- <h2 id = "header">Locations</h2> -->
+            <!-- <ul class="mobile-product-filters vertical menu show-for-small-only" data-accordion-menu>
+             <li> -->
+               <!-- <a href="#"><h2>Filter By</h2></a> -->
+               <!-- <ul class="vertical menu" data-accordion-menu> -->
+                <!-- <li class="product-filters-tab"> -->
+                  <a href="#">Locations</a>
+                  <!-- <ul class="categories-menu menu vertical nested is-active"> -->
+                     <!-- <a href="#" class="clear-all" id="category-clear-all">Clear All</a> -->
+                     <input name="San_Francisco" type="checkbox" value="San_Francisco">San Francisco<br>
+                     <input name="Daly_City" type="checkbox" value="Daly_City">Daly City<br>
+                     <input name="Burlingame" type="checkbox" value="Burlingame">Burlingame<br>
+                     <input name="Millbrae" type="checkbox" value="Millbrae">Millbrae<br>
+                     <input name="San_Bruno" type="checkbox" value="San_Bruno">San Bruno<br>
+                     <input name="Redwood_City" type="checkbox" value="Redwood_City">Redwood City<br>
+                     <input name="Palo_Alto" type="checkbox" value="Palo_Alto">Palo Alto<br>
+                     <input name="Sunnyvale" type="checkbox" value="Sunnyvale">Sunnyvale<br>
+                     <input name="San_Jose" type="checkbox" value="San_Jose">San Jose<br>
+
+                   <!-- </ul>
+               </li>
+               <li class="product-filters-tab"> -->
+                  <a href="#">Cuisine</a>
+                  <!-- <ul class="categories-menu menu vertical nested is-active"> -->
+                    <!-- <a href="#" class="clear-all" id="size-clear-all">Clear All</a> -->
+                    <input name="bubble_tea" type="checkbox" value="bubble_tea">Boba<br>
+                    <input name="desserts" type="checkbox" value="desserts">Desserts<br>
+                    <input name="fast_casual_dining" type="checkbox" value="fast_casual_dining">Casual Dining<br>
+                    <input name"fine_dining" type = "checkbox" value="fine_dining">Fine Dining<br>
+                  <!-- </ul>
+
+                </li> -->
+               <!-- <li class="product-filters-tab"> -->
+                  <a href="#">Other</a>
+                  <!-- <ul class="categories-menu menu vertical nested"> -->
+                    <!-- <a href="#" class="clear-all" id="color-clear-all">Clear All</a> -->
+                    <input name="vegetarian" type="checkbox" value="vegetarian">Vegetarian<br>
+                    <input name="healthy_food" type="checkbox" value="healthy_food">Healthy Food<br>
+                  <!-- </ul>
+                </li>
+               <li class="product-filters-tab"> -->
+                  <a href="#">Rating</a>
+                  <!-- <ul class="categories-menu menu vertical nested"> -->
+                    <!-- <a href="#" class="clear-all" id="price-clear-all">Clear All</a> -->
+                    <input name="five_stars" type="checkbox" value="five_stars">&#9734;&#9734;&#9734;&#9734;&#9734;<br>
+                    <input name="four_stars" type="checkbox" value="four_stars">&#9734;&#9734;&#9734;&#9734;<br>
+                    <input name="three_stars" type="checkbox" value="three_stars">&#9734;&#9734;&#9734;<br>
+                    <input name="two_stars" type="checkbox" value="two_stars">&#9734;&#9734;<br>
+                    <input name="one_star" type="checkbox" value="one_star">&#9734;<br>
+                  <!-- </ul>
+                </li>
+               </ul> -->
+             <!-- </li>
+           </ul> -->
+      </div>
+    </ul>
+</div>
+
+  <div id="Contact" class="tabcontent">
+    <h3 id = "header1" class = "pad2">Contact Us</h3>
+    <div= class ="card" "row">
+        <div class="column">
+              <img src= "ava.JPG" width="224" height="224" ></img>
+              <h1 class = "namefont">Ava Rebollido</h1>
+                <p class="title">CEO & Founder, Student at GWC SIP</p>
+                <p class = "bio"> Ava is a rising senior at Summit Shasta High School in Daly City, CA. She likes to travel and eat a wide variety of chicken.</p>
+                <p class = "bio"> #bigbrain #whenslunch? #nikkicanweeatnow? #solitare #iwon</p>
+                <div style="margin: 24px 0;">
+              </div>
+              <button onclick ="parent.open ('https://www.linkedin.com/in/avarebollido/')">Contact</button>
+              <p>
+            </div>
+
+        <div>
+          <div class="column">
+            <img src= "claire.jpg" width="224" height="224" ></img>
+            <h1 class = "namefont">Claire Min</h1>
+              <p class="title">CEO & Founder, Student at GWC SIP</p>
+              <p class = "bio"> Claire is a upcoming senior in New Orleans, Louisiana. In her free time, she enjoys playing the violin & translating.</p>
+              <p class ="bio"> #nola #smact #mardigras #LSU #Tulane #SanFran #Frisco #benyay </p>
+              <div style="margin: 24px 0;">
+              </div>
+            <button onclick ="parent.open ('https://www.linkedin.com/in/clairemin/')">Contact</button>
+            <p>
+          </div>
+        </div>
+        <div>
+          <div class="column">
+            <img src= "marina.jpg" width="224" height="224" ></img>
+            <h1 class = "namefont">Marina Wong</h1>
+              <p class="title">CEO & Founder, Student at GWC SIP</p>
+              <p class = "bio">Marina is a rising Senior at Mills High School in Millbrae, California. She enjoys eating, travelling, and taking naps.</p>
+              <p class = "bio">#teeforteeth #dataordata #almosttimetoshipclaireoff #sadscrunchie #imhungry</p>
+              <div style="margin: 24px 0;">
+              </div>
+            <button onclick ="parent.open ('https://www.linkedin.com/in/marinazwong/')">Contact</button>
+            <p>
+          </div>
+        </div>
+        <div>
+          <div class="column">
+            <img src= "shania.JPG" width="224" height="224" ></img>
+            <h1 class = "namefont">Shania Hao</h1>
+              <p class="title">CEO & Founder, Student at GWC SIP</p>
+              <p class = "bio" > Shania is an upcoming junior at Westmoor High School. She enjoys psychology, listening to music, and doing theatre. </p>
+              <p class = "bio" > #drinkwater #luisiana #shaniatwain #6amruns #talkingLEDs #stac'm</p>
+              <div style="margin: 24px 0;">
+              </div>
+              <button onclick ="parent.open ('https://www.linkedin.com/in/shaniahao/')">Contact</button>
+              <p>
+            </div>
+          </div>
+        <div>
+          <div class="column">
+
+            <img src= "tiffany.jpg" width="224" height="224" ></img>
+            <h1 class = "namefont">Tiffany Mok</h1>
+              <p class="title">CEO & Founder, Student at GWC SIP</p>
+              <p class = "bio" > Tiffany is a rising Junior at Westmoor High School in Daly City, CA. She likes to play tennis and badminton in her free time. </p>
+              <p class = "bio" > #icodedeverything #APIsaremyfavorite #Tiffaknee</p>
+              <div style="margin: 24px 0;">
+              </div>
+            <button onclick ="parent.open ('https://www.linkedin.com/in/tiffany-mok-a7815718b/')">Contact</button>
+            <p>
+          </div>
+        </div>
+
+
+  <script>
+  var itemsToFilter = document.querySelectorAll("#itemsToFilter li");
+
+  //setup click event handlers on our checkboxes
+  var checkBoxes = document.querySelectorAll(".filterSection li input");
+
+  for (var i = 0; i < checkBoxes.length; i++) {
+      checkBoxes[i].addEventListener("click", filterItems, false);
+      checkBoxes[i].checked = true;
+  }
+  function filterItems(e) {
+      var clickedItem = e.target;
+
+      if (clickedItem.checked == true) {
+          hideOrShowItems(clickedItem.value, "hideItem", "showItem");
+      } else if (clickedItem.checked == false) {
+          hideOrShowItems(clickedItem.value, "showItem", "hideItem");
+      } else {
+          // deal with the indeterminate state if needed
+      }
+  }
+  function hideOrShowItems(itemType, classToRemove, classToAdd) {
+      for (var i = 0; i < itemsToFilter.length; i++) {
+          var currentItem = itemsToFilter[i];
+
+          if (currentItem.getAttribute("data-type") == itemType) {
+              removeClass(currentItem, classToRemove);
+              addClass(currentItem, classToAdd);
+          }
+      }
+  }
+  function addClass(element, classToAdd) {
+      var currentClassValue = element.className;
+
+      if (currentClassValue.indexOf(classToAdd) == -1) {
+          if ((currentClassValue == null) || (currentClassValue === "")) {
+              element.className = classToAdd;
+          } else {
+              element.className += " " + classToAdd;
+          }
+      }
+  }
+
+  function removeClass(element, classToRemove) {
+      var currentClassValue = element.className;
+
+      if (currentClassValue == classToRemove) {
+          element.className = "";
+          return;
+      }
+
+      var classValues = currentClassValue.split(" ");
+      var filteredList = [];
+
+      for (var i = 0 ; i < classValues.length; i++) {
+          if (classToRemove != classValues[i]) {
+              filteredList.push(classValues[i]);
+          }
+      }
+
+      element.className = filteredList.join(" ");
+  }
+  function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+  }
+
+  document.getElementById("defaultOpen").click();
+
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+
+</script>
+
+</body>
+
+</html>
